@@ -1,0 +1,18 @@
+<form [ngFormModel]="formModel" #f="ngForm">
+    <material-input ngControl="cName"
+                    [(ngModel)]="addr.name"
+                    label="Your name"
+                    floatingLabel
+                    (change)="onChange('name')"
+    ></material-input>
+    <material-input ngControl="cStreet"
+                    [(ngModel)]="addr.street"
+                    label="Street 1"
+                    floatingLabel
+                    (change)="onChange('street')"
+    ></material-input>
+</form>
+<br>
+Address in addr_component: {{addr}}<br>
+Form valid: {{ f.form.valid }}<br>
+Form errors: {{ f.form.errors }}<br>

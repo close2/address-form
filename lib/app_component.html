@@ -1,0 +1,11 @@
+<h1>My First AngularDart App</h1>
+
+<form #fAddr="ngForm">
+    <addr-form #addrForm="ngForm" [(ngModel)]="addr"></addr-form>
+</form>
+
+<br>
+Address: {{addr}}<br>
+form valid: {{ fAddr.valid }}<br>
+addr-form valid: {{ addrForm.valid }}<br>
+
